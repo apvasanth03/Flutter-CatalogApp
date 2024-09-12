@@ -1,0 +1,144 @@
+body
+{
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+word-wrap:break-word;
+}
+div.text_exposed
+{
+word-wrap: break-word;
+}
+table
+{
+margin: 0;
+padding: 0;
+border: 0;
+border-collapse: collapse;
+border-spacing: 0;
+display:block;
+cellspacing:0;
+}
+td,th
+{
+font-size: 14px;
+vertical-align: bottom;
+text-align: left;
+word-wrap:break-all;
+text-overflow: ellipsis;
+}
+/*#editControl*/
+/*{*/
+/*position:absolute;*/
+/*-webkit-tap-highlight-color:rgba(0,0,0,0);*/
+/*width: 92%%;*/
+/*overflow-y: auto;*/
+/*-webkit-overflow-scrolling: touch;*/
+/*}*/
+/*#editControl p*/
+/*{*/
+/*margin:0;*/
+/*}*/
+.conversation_wrap
+{
+display:inline-block;
+margin:5px;
+background:whitesmoke;
+}
+.rsltmsg{
+}
+.rsltavatar
+{
+float:left;
+max-width:0px;
+margin-right:10px;
+display:none;
+}
+.rsltmsg_wrap
+{
+margin:10px;
+}
+.rsltuser
+{
+display:inline-block;
+font-weight:bold;
+}
+.time
+{
+display:inline-block;
+float:right;
+}
+.tkt_rsltsum
+{
+margin-top:10px;
+margin-bottom-5px;
+display:inline-block;
+}
+img
+{
+max-width: 300px;
+height: auto;
+}
+
+/* In V2 api for some cases, parent blockquote tag is not coming - TO resolve this we are setting style for .freshdesk_quote class also */
+blockquote,
+.freshdesk_quote
+{
+border-left: 1px solid #b83131;
+background: #ffffff;
+margin: 1em 0px;
+padding: 1px 4px;
+word-wrap: break-word;
+}
+/* On setting the style for .freshdesk_quote, the borders is coming twice because of both class(freshdesk_quote) & tag(blockquote) , To prevent this we are setting ".freshdesk_quote 1st child blockquote border size as 0"  */
+.freshdesk_quote > blockquote {
+  border-left: 0;
+  margin: 0;
+  padding: 0;
+}
+blockquote p
+{ margin: 0px;
+}
+blockquote p img
+{
+width: 300px !important;
+height: auto !important;
+overflow-x:hidden;
+}
+blockquote p img
+{
+max-width: 290px !important;
+overflow-x:hidden;
+}
+blockquote blockquote p img
+{
+max-width: 280px !important;
+overflow-x:hidden;
+}
+blockquote blockquote blockquote p img
+{
+max-width: 270px !important;
+overflow-x:hidden;
+}
+blockquote blockquote blockquote blockquote p img
+{
+max-width: 260px !important;
+overflow-x:hidden;
+}
+blockquote blockquote blockquote blockquote blockquote p img
+{
+max-width: 250px !important;
+overflow-x:hidden;
+}
+blockquote blockquote blockquote blockquote blockquote blockquote p img
+{
+max-width: 240px !important;
+overflow-x:hidden;
+}
+/* when class is attach-error ,this is Attachment Error content, we will show rounded background */
+.attach-error {
+padding: 6px 12px;
+background-color: #FEF1E1;
+border-radius: 4px;
+font-size: 12px;
+margin-top: 8px;
+line-height: 18px;
+ }
